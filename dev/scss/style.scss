@@ -1,0 +1,339 @@
+$color: #2aacc8;
+
+body {
+	font-family: arial;
+	margin:0;
+	background-color: #000;
+}
+	.Bwrappers {
+		max-width: 1000px;
+		margin: 0 auto;
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+
+	.nav {
+		margin-top: -10px;
+		list-style: none;
+		float: right;
+		font-size: 30px;
+		& li {
+			display: inline-block;
+			font-size: 13px;
+			margin-left: 10px; 
+			font-weight: 700;
+			line-height: 20px;
+			& a {
+				display: block;
+				color: black;
+				text-decoration: none;
+				padding: 20px 10px;
+				&:hover {
+					padding-top: 5px;
+					padding-bottom: 5px;
+					border-top: 3px solid $color;
+					color: $color;
+					background-color: white;
+					&:after {
+						color: black;
+					}
+				}
+			}
+		}
+	}
+
+		ul.subnav {
+			display: none;
+		    position: absolute;
+		    width: 200px;
+		    top: 30px;
+		    left: inherit;
+		    font-size: 13px;
+		    font-weight: 700;
+			line-height: 20px;
+		    background-color: white;
+		   }
+
+					ul.subnav > li {
+					    display: block;
+					    border-bottom: 1px solid lightgray;
+					}
+
+					ul.subnav > li .smiley {
+					    border-radius: 1em;
+					-webkit-box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
+					box-shadow: 0 0 0 .4em #2C2C2C, inset 0 0 0 .1em #2C2C2C;
+					height: 2em;
+					position: relative;
+					width: 2em;
+					margin-top: 0.3em;
+					}
+					 
+					.smiley::after, .smiley::before {
+						background-image: radial-gradient(transparent 35%, #2C2C2C 35%);
+						content: '';
+						height: 1em;
+						position: absolute;
+						top: 0;
+						width: 1em;
+					}
+					 
+					.smiley:after {
+					    border-radius: 1em 0 0 0;
+					    left: 0;
+					}
+					 
+					.smiley:before {
+					    border-radius: 0 1em 0 0;
+					    right: 0;
+					}
+
+					ul.subnav > li > a {
+					    display: block;
+					    padding: 10px;
+					    text-decoration: none;
+					    
+					}
+					ul.subnav > li > a:hover {
+					    border-top: none;
+					    color:  $color;
+					    padding: 10px;
+					}
+
+						ul.nav > li:hover > ul.subnav {
+						    display: block;
+						  	z-index: 1;
+						  	border-bottom: 3px solid $color;
+						}
+		.downarrow:after {
+			content: "\25be";
+			display: inline;
+			clear: both;
+			outline-width: 700;
+			padding-left: 10px;
+			padding-bottom: 20px;
+		} 
+
+	.logotype {
+		margin-top: 40px;
+		font-size: 50px;
+		line-height: 20px;
+		font-family: Lato;
+		font-weight: 900;
+		color: black;
+	}
+
+span {
+	color: $color;
+	font-weight: 400;
+	vertical-align: top;
+}
+
+	.foil {
+		background-color: #81e4ed;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: 100%;
+	}
+			.foil img  {
+				background-color: #dd5835;
+				display: block;
+				margin: 0 auto;
+				max-width: 1000px;
+			}
+			.foil ul {
+				text-align: center;
+			}
+
+			.foil li {
+				display: inline-block;
+				margin: 20px 10px 0;
+			}
+
+			.foil a {
+			display: inline-block;
+			height: 15px;
+			width: 15px;
+			background-color: gray;
+			border-radius: 50%;
+			}
+
+			.foil a:hover {
+				background-color: white;
+			}
+
+			.next {
+				padding: 30px;
+			}
+
+			.next > div  {
+				display: inline-block;
+				width: 23%;
+				margin: 5px;
+				vertical-align: top;
+			}
+
+			.next h6 {
+				font-size: 15px;
+				font-weight: 700;
+				line-height: 20px;
+				text-transform: uppercase;
+			}
+
+			.next h6:before {
+				content: "";
+				background-color: $color;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-position: center;
+				margin-right: 5%;
+				vertical-align: top;
+				margin-bottom: 5%;
+			}
+
+			h6.pencil:before {
+				background-image: url(img/pencil.png);
+				background-repeat: no-repeat;
+			}
+
+			h6.fullscreen:before {
+				background-image: url(img/fullscreen.png);
+				background-repeat: no-repeat;
+			}
+
+			h6.lists:before {
+				background-image: url(img/list.png);
+				background-repeat: no-repeat;
+			}
+			h6.plane:before {
+				background-image: url(img/airplane.png);
+				background-repeat: no-repeat;
+			}
+			
+
+		.next p {
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 20px;
+			color: #363636;
+			padding-bottom: 20px;
+			height: 120px;
+			overflow: hidden;
+		}
+
+		.next a {
+			color: $color;
+		}
+
+		.next a:before {
+			content: "\25b8";
+			display: inline;
+			color: black;
+			clear: both;
+			padding-right: 10px;
+		} 
+
+	.main {
+		background-color: white;
+		max-width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.latest {
+		max-width: 1000px;
+		margin: 0 auto;
+		position: relative;
+		padding: 15px 0;
+	}
+
+		.latest ul {
+			float: right;
+		}
+
+			.latest li {
+			display: inline-block;
+			height: 15px;
+			width: 15px;
+			background-color: $color;
+			border-radius: 50%;
+			font-weight: 700;
+			margin: 5px; 
+			text-align: center;
+			}
+			.latest h6:before {
+				content: "";
+				display: inline-block;
+				width: 50px;
+				height: 20px;
+				background-image: url(img/pointer.png);
+				background-repeat: no-repeat;
+				clear: both;
+				}
+
+			.latest h6 {
+				width: 200px;
+				display: inline;
+			}
+
+		.pic {
+			text-align: center;
+		}
+
+		.gallery {
+			display: inline-block;
+			position: relative;
+		}
+			.gallery img {
+				width: 100%;
+			}
+
+	.other {
+		height: 50%;
+		width: 100%;
+		background-color: $color;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: none;
+	}
+
+	.gallery:hover .other {
+		display: block;
+		height: 50%;
+	}
+	.other a {
+		vertical-align: middle;
+	}
+	
+		.other a:before {
+			content: "";
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			background-repeat: no-repeat;	
+			background-position: bottom;
+		}
+		
+			.other a:first-child:before {
+				background-image: url(img/eye.png);
+				vertical-align: middle;
+			}
+
+			.other a:last-child:before {
+				background-image: url(img/chain.png);
+				vertical-align: middle;
+			}
+
+hr {
+	color: lightgray;
+	max-width: 1000px;
+	margin-bottom: 10px;
+	}
+	
+@import 'main';

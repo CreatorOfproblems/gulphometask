@@ -1,0 +1,187 @@
+.person {
+		display: inline-block;
+		max-width: 49%;
+		font-size: 0;
+		vertical-align: top;
+		padding-bottom: 20px;
+	}
+
+		.person h6 {
+				font-size: 15px;
+				font-weight: 700;
+				line-height: 20px;
+				text-transform: uppercase;
+		}
+
+			.person h6:before {
+				content: "";
+				display: inline-block;
+				width: 50px;
+				height: 20px;
+				background-image: url(img/comments.png);
+				background-repeat: no-repeat;
+				clear: both;
+		}
+			.clientsicon h6:before {
+				content: "";
+				display: inline-block;
+				width: 50px;
+				height: 20px;
+				background-image: url(img/clients.png);
+				background-repeat: no-repeat;
+				clear: both;
+			}
+
+		.person p {
+			font-size: 14px;
+			width: 90%;
+			font-weight: 400;
+			line-height: 24px;
+			color: #363636;
+			padding: 25px 25px 0 0;
+		}
+			.person p:last-child {
+				font-weight: 700;
+				font-style: italic;
+			}
+
+		.person div {
+			padding-top: 20px;
+		}
+
+	.download {
+		max-width: 1000px;
+		height: 140px;
+		background-color: #e8fcfe;
+		border: 1px solid #81e4ed;
+		margin: 0 auto;
+	}
+		.download p {
+			width: 607px;
+			height: 68px;
+			color: #363636;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 26px;
+			display: inline-block;
+			padding: 30px;
+
+		}
+
+		.download b {
+			display: inline-block;
+			color: #0d0707;
+			font-weight: 700;
+			line-height: 60px;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 0px;
+			width: 240px;
+			height: 60px;
+			vertical-align: middle;
+			background-color: $color;
+			background-image: linear-gradient(to top, $color 0%, $color 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+			border: 1px solid $color;
+			border-radius: 8px;
+			box-shadow: inset 0 2px 1px rgba(255, 255, 255, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+		}
+
+		.download b:before {
+				content: "";
+				display: inline-block;
+				width: 50px;
+				height: 25px;
+				background-image: url(img/download.png);
+				background-repeat: no-repeat;
+				clear: both;
+		}
+
+		.download a {
+			color: #0d0707;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+footer {
+	text-align: justify;
+}
+
+	footer > div {
+		display: inline-block;
+		width: 14%;
+		vertical-align: top;
+		padding: 30px 0;
+	}
+
+		footer > div:first-child {
+				width: 30%;
+			}
+
+		footer > div:nth-child(4) {
+				width: 18%;
+			}
+
+		footer > div:last-child {
+				width: 22%;
+				text-align: center;
+			}
+
+	footer > div > h6 {
+		color: black;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	footer > div > p {
+		color: #363636;
+		width: 80%;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: left;
+	}
+
+	footer > div .end {
+		margin-top: 25px;
+	}
+
+	footer > div > ul > li > a {
+		line-height: 26px;
+		text-decoration: none;
+		color: #363636;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	footer > div > a {
+		font-size: 70px;
+		line-height: 0.8;
+	}
+
+.finish {
+	margin-bottom: 30px;
+}
+
+	.finish p {
+		color: #363636;
+		width: 80%;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: left;
+		float: left;
+	}
+
+	.finish a {
+		color: #363636;
+	}
+
+	.finish:after {
+		content: "";
+		display: inline-block;
+		clear: both;
+	}
